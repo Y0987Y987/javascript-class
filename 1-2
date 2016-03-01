@@ -1,0 +1,13 @@
+var a =[1,2,3,4];
+var b =[4,3,2,1];
+
+function mul(x,y){
+	var c = [];
+	for (var i=0;i<a.length;i++)
+		c[i]=a[i]*b[i];
+		return c;
+}
+
+d=mul(a,b);
+
+console.log(d);
