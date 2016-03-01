@@ -1,0 +1,5 @@
+var i=1;
+for (j=2;j<=1000;j++) {
+	i=i+j;
+}
+console.log(i);
