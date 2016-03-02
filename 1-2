@@ -3,7 +3,7 @@ var b =[4,3,2,1];
 
 function mul(x,y){
 	var c = [];
-	for (var i=0;i<a.length;i++)
+	for (var i=0;i<a.length;i++)   //The length property性質 sets or returns the number of elements in an array.
 		c[i]=a[i]*b[i];
 		return c;
 }
