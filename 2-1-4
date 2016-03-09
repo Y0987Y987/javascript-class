@@ -1,0 +1,5 @@
+function d2b (d) { 
+	console.log("d2b(%d)="+d.toString(2));   //the string, representing a number (2) (8) (10) (16)
+}
+
+d2b(6);
