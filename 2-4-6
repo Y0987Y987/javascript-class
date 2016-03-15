@@ -1,0 +1,8 @@
+//請用遞迴計算 sum(n) = 1+2+...+n ？
+//範例：sum(10) = 55
+
+var sum=0;
+for (i=1;i<=10;i++){
+	sum = sum +i;
+}
+console.log("sum(10)="+sum);
