@@ -52,6 +52,7 @@ console.log(commonFactor(12,15));
 
 function d2b (d) { 
 	var b = parseInt(d.toString(2));  //the string, representing a number (2) (8) (10) (16)
+	return b;
 }					  //parseInt(); 字串轉數字
 
 console.log("binary(6)="+d2b(6));
@@ -62,18 +63,28 @@ console.log("binary(6)="+d2b(6));
 //5.請檢查某數是否為質數？ 範例： isPrime(17) => true
 
 function isPrime (n) {
-    for (i=2;i<=n;i++){
-        if (n % i === 0 && n !== i){
+    for (i=2;i<n;i++){
+        if (n%i === 0){
             return false;
         }
-        if (n % i === 0 && n === i){
-            return true;
-        }
+	return true;
     }
 }
 
 
 console.log("isPrime(17)=", isPrime(17));
 ---------------------------------------------------------------------------------------------------------------------------------
+//6.給你兩個數字，請算出這兩個數字之間有幾個質數(包含輸入的兩個數字)？
+//範例： countPrime(3, 7) => 3
+
+function isPrime (n) {
+   for (i=2;i<n;i++) {
+      if (n === i){
+      	return false;
+      	}
+      	return true
+      
+
+
 
 
