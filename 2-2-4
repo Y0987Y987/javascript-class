@@ -1,19 +1,10 @@
-//mean([1,2,3,4,5])=3
+//請算出某陣列的平均值？ 範例： mean([1,2,3,4,5]) => 3
 
-
-	var a = [1,2,3,4,5];
-
-
+var a = [1,2,3,4,5];
+var b = 0;
 	
-	//for (i=0;i<=a.length;i++){
-	//	b=b+a[i];
-	//}
+for (i=0;i<a.length;i++){      //a[4]=5
+		b += a[i];
+}
 	
-	e=a[0]+a[1]+a[2]+a[3]+a[4];
-	f=e/a.length;
-	
-	//var c = a.length;
-	//var d = b/c;
-	
-	console.log("mean([1,2,3,4,5])="+f);
-
+console.log("mean([1,2,3,4,5])="+b/a.length);
