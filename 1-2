@@ -1,3 +1,5 @@
+//請寫出一個可以將兩向量相乘的函數 mul(a,b)，並用 mul([1,2,3,4], [4,3,2,1]) 進行測試。
+
 var a =[1,2,3,4];
 var b =[4,3,2,1];
 
@@ -8,6 +10,4 @@ function mul(x,y){
 		return c;
 }
 
-d=mul(a,b);
-
-console.log(d);
+console.log(mul(a,b));
