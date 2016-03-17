@@ -8,3 +8,11 @@ for (i=0;i<a.length;i++){      //a[4]=5
 }
 	
 console.log("mean([1,2,3,4,5])="+b/a.length);
+
+//	var a = [1, 2, 3, 4, 5];
+//	var b = a.reduce(function(x, y){     // 参数x表示累计变量，默认为数组的第一个元素，y则是数组的当前元素。reduce方法依次将每个数组元素加入x，最终返回它们的总和15。
+/	    return x+y;
+//	});
+	// 15
+
+//	console.log(b/a.length);
