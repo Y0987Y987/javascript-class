@@ -132,3 +132,35 @@ c.push(b)
 console.log(b[min]);
 */
 --------------------------------------------------------------------------------------------------------------
+//7.請寫一個函數 random(n, a, b) 可以產生 n 個介於 a 到 b 之間的浮點亂數？ 
+//範例： random(3, 10, 20)= [13.76, 19,23, 14,11]
+
+//產生n個亂數
+function pu (n,a,b){
+	var arr = [];
+	for (i=1;i<=n;i++){
+		rpick(a,b);
+		arr.push(rpick(a,b));
+	}
+	return arr;
+}
+
+//取亂數
+function rpick (a,b) {
+	var c = 0;
+	var d = 0;
+	d = b-a;
+	c = Math.random() * d + a;
+	return c;
+}
+
+function random (n,a,b) {
+console.log(pu(n,a,b));
+}
+
+random(3,10,20);
+/*
+var a = Math.random()*b-a +a;
+console.log(a);
+*/
+--------------------------------------------------------------------------------------------------------------
